@@ -1,0 +1,224 @@
+﻿body{
+	background: #222;
+	color: #eee;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+	width: 96%;
+	margin: 0 auto;
+	padding: 0 2%;
+	max-width: 960px;
+}
+
+.visually-hidden{
+	display: none;
+}
+
+.page-navigation{
+	background-color: #512DA8;
+	height: 60px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.page-navigation .page-menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.page-menu::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.page-menu .menu-item{
+	float: left;
+	width: 20%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.page-menu .menu-item .menu-link{
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+.header-content .heading-title{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 56px;
+	
+}
+
+.entry-header{
+	background-color: #1de9b6;
+	font-size: 56px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.entry-header .entry-name{
+	margin: 0;
+	padding: 80px 0;
+}
+
+.about-us{
+	background-color: #e91e63;
+	padding: 60px 0;
+}
+
+.about-us .article-title{
+	text-transform: uppercase;
+	font-size: 36px;
+	margin: 5px 0;
+}
+
+.wrapper .left-side, .wrapper .right-side{
+	width: 46%;
+	padding: 0 2%;
+	float: left;
+}
+
+.about-us img{
+	width: 100%;
+}
+
+.about-us .wrapper::after, .contact-us .wrapper::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.trusted-us{
+	background-color: #607d8b;
+	padding-bottom: 60px;
+}
+
+.header-content .heading-title{
+	margin: 0;
+	padding: 60px 0;
+}
+
+.company-list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.company-list .company-item{
+	width: 10%;
+	margin: 0 5%;
+	float: left;
+}
+
+.company-item .company-image{
+	width: 100%;
+}
+
+.company-list::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.company-item.samsung{
+	padding: 40px 0;
+}
+
+.contact-us{
+	background: url('../img/tlo.jpg') center center;
+	background-size: cover;
+	padding: 60px;
+}
+
+.contact-us .contact-title{
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
+	padding-bottom: 60px;
+}
+
+.contact-us address{
+	font-style: normal;
+	font-size: 28px;
+	text-align: center;
+}
+
+.contact-us .left-side{
+	border-right: 5px solid #FFF;
+	box-sizing: border-box;
+}
+
+.contact-us .input-data{
+	border: 4px solid #FFF;
+	display: block;
+	margin: 5px 0;
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	padding: 8px;
+	color: #FFF;
+}
+
+.contact-us .btn-submit{
+	float: right;
+	padding: 10px;
+	background-color: #FFF;
+	color: #000;
+	border: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px){
+	.page-navigation{
+		height: auto;
+	}
+	
+	.page-menu .menu-item{
+		width: 100%;
+	}
+	
+	.page-menu .menu-item:last-child{
+		padding-bottom: 20px;
+	}
+	
+	.entry-header .entry-name{
+		font-size: 32px;
+	}
+	
+	.wrapper .left-side, .wrapper .right-side{
+		width: 96%;
+	}
+	
+	.company-list .company-item{
+		width: 40%;
+	}
+	
+	.clearfix{
+		clear: both;
+	}
+	
+	.contact-us{
+		padding: 0;
+	}
+	
+	
+	.contact-us .left-side{
+		border-right: 0;
+	}
+	
+	.contact-us .input-data{
+		width: 80%;
+		margin: 5px auto;
+	}
+	
+}
